@@ -6,8 +6,7 @@ FUNCTION Main()
 	Local dDataHora
 	Local cHora
 
-	SET DATE BRITISH
-	SET CENTURY ON
+	SET DATE FORMAT TO "DD/MM/YYYY"
 
 	dDataHora  := DToC(Date())
 	cHora      := Time()
