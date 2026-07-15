@@ -3,8 +3,14 @@ FUNCTION Main()
 	Local cCidade   := "Sao Paulo"
 	Local cCurso    := "Hardour/ADVPL"
 	Local cSep      := "==================================="
-    local dDataHora  := DToC(Date())
-    local cHora      := Time()
+	Local dDataHora
+	Local cHora
+
+	SET DATE BRITISH
+	SET CENTURY ON
+
+	dDataHora  := DToC(Date())
+	cHora      := Time()
 
     QQout(cSep)
     Qout("       FICHA DE APRESENTACAO       ")
