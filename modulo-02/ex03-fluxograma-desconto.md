@@ -6,14 +6,15 @@ mostre o valor final a pagar.”
 
 Dica: use o losango para a decisão ( Valor > 100? ) com os dois caminhos Sim e Não.
 
---------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
 
+```mermaid
 flowchart TD
     A([Início]) --> B[/Leia valor da compra/]
     B --> C{Valor > 100?}
-    C -- Sim --> D[total ← valor × 0.90]
-    C -- Não --> E[total ← valor]
+    C -- Sim --> D[total = valor * 0.90]
+    C -- Não --> E[total = valor]
     D --> F[/Escreva total/]
     E --> F
     F --> G([Fim])
-
+```
