@@ -11,7 +11,7 @@ FUNCTION Main()
 	dDataHora  := DToC(Date())
 	cHora      := Time()
 
-    QQout(cSep)
+    Qout(cSep)
     Qout("       FICHA DE APRESENTACAO       ")
     Qout(cSep)
     Qout("Nome: " + cNome)
