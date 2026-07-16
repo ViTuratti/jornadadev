@@ -8,14 +8,17 @@ Dica: use as palavras Leia , Escreva , Se ... Senão e o operador ← para atrib
 ---------------------------------------------------------------------------------
 
 a.  
+```text
 Inicio
     Leia nBase
     Leia nAltura
     nArea ← nBase * nAltura
     Escreva nArea
 Fim
+```
 
 b.
+```text
 Inicio
     Leia nNumero
     Se nNumero % 2 = 0 
@@ -24,8 +27,10 @@ Inicio
         Escreva Ímpar
     Fim Se
 Fim
+```
 
 c. 
+```text
 Inicio
     Leia nNum1
     Leia nNum2
@@ -39,4 +44,5 @@ Inicio
     Fim Se
     Escreva nMaior
 Fim
+```
 

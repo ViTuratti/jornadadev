@@ -11,15 +11,18 @@ Entregue dois níveis: o Nível 1 (visão geral, 3–4 passos) e o Nível 2 (cad
 
 Nível 1 — visão geral:
 
+```text
 Início
     Registrar itens da compra
     Calcular subtotal
     Aplicar desconto
     Mostrar total a pagar
 Fim
+```
 
 Nível 2 — detalhando cada parte:
 
+```text
 Início
 Registrar itens da compra:
     Repetir até que não haja mais itens:
@@ -40,4 +43,5 @@ Aplicar desconto:
 Mostrar total a pagar:
     Escrever "Total a pagar: R$ " + Total
 Fim
+```
 
