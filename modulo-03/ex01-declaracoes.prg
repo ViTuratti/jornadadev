@@ -3,13 +3,15 @@ Function Main()
    Local cNome       := "Victor Turatti"
    Local nSalario    := 2500
    Local lAtivo      := .T.
-   Local dAdmissao   := date()
+   Local dAdmissao   := CTOD("01/01/2026")
    Local cCodDepto   := "TI01"
+   
+   SET DATE BRITISH
 
    Qout("Nome: " + cNome)
-   Qout("Sal·rio: " + AllTrim(Str(nSalario, 10, 2)))
+   Qout("Sal√°rio: " + AllTrim(Str(nSalario, 10, 2)))
    Qout("Ativo: " + IIf(lAtivo, ".T.", ".F."))
-   Qout("Data de Admiss„o: " + DtoC(dAdmissao))
-   Qout("CÛdigo do Departamento: " + cCodDepto)
+   Qout("Data de Admiss√£o: " + DTOC(dAdmissao))
+   Qout("C√≥digo do Departamento: " + cCodDepto)
 
 Return Nil
