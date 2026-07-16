@@ -1,15 +1,10 @@
 FUNCTION Main()
 	Local cNome     := "Victor"
 	Local cCidade   := "Sao Paulo"
-	Local cCurso    := "Hardour/ADVPL"
+	Local cCurso    := "Harbour/ADVPL"
 	Local cSep      := "==================================="
-	Local dDataHora
-	Local cHora
-
-	SET DATE FORMAT TO "DD/MM/YYYY"
-
-	dDataHora  := DToC(Date())
-	cHora      := Time()
+	Local dDataHora  := hb_DToC(Date(), "DD/MM/YYYY")
+	Local cHora      := Time()
 
     QQout(cSep)
     Qout("       FICHA DE APRESENTACAO       ")
