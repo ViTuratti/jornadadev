@@ -23,8 +23,8 @@ Function main()
     Qout(" ")
     Qout("Cliente: " + cNome)
     Qout("Idade: " + AllTrim(Str(Int(nIdade))) + " anos")
-    Qout("Preco: " + AllTrim(Str(nPreco)))
-    Qout("Desconto: " + AllTrim(Str(nDesconto)))
-    Qout("Total: " + AllTrim(Str(nTotal)))
+    Qout("Preco: " + AllTrim(Str(nPreco,10,2)))
+    Qout("Desconto: " + AllTrim(Str(nDesconto,10,2)))
+    Qout("Total: " + AllTrim(Str(nTotal,10,2)))
 
 Return Nil
