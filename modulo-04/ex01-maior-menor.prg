@@ -10,14 +10,12 @@ Function Main()
     nValor2 := Val(nValor2)
 
     IF nValor1 == nValor2
-        QOut("Os dois valores são iguais.")
+        QOut("Os dois valores sÃ£o iguais.")
+    ELSEIF nValor1 > nValor2
+        QOut("Maior: " + AllTrim(Str(nValor1)))
+        QOut("Menor: " + AllTrim(Str(nValor2)))
     ELSE
-        IF nValor1 > nValor2
-            QOut("Maior: " + AllTrim(Str(nValor1)))
-            QOut("Menor: " + AllTrim(Str(nValor2)))
-        ELSE
-            QOut("Maior: " + AllTrim(Str(nValor2)))
-            QOut("Menor: " + AllTrim(Str(nValor1)))
-        ENDIF
+        QOut("Maior: " + AllTrim(Str(nValor2)))
+        QOut("Menor: " + AllTrim(Str(nValor1)))
     ENDIF
 Return Nil
