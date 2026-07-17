@@ -1,10 +1,11 @@
 Function Main()
 
+    Local cSalario
     Local nSalario := 0
     Local nNovoSalario := 0
 
-    ACCEPT "Digite o sal rio atual: " TO nSalario
-    nSalario := Val(nSalario)
+    ACCEPT "Digite o salário atual: " TO cSalario
+    nSalario := Val(cSalario)
 
     IF nSalario < 1000
         nNovoSalario := nSalario * 1.15
@@ -17,7 +18,7 @@ Function Main()
     ENDIF
 
     QOut("")
-    QOut("Sal rio atual: R$ " + AllTrim(Str(nSalario, 10, 2)))
-    QOut("Novo sal rio : R$ " + AllTrim(Str(nNovoSalario, 10, 2)))
+    QOut("Salário atual: R$ " + AllTrim(Str(nSalario,10,2)))
+    QOut("Novo salário : R$ " + AllTrim(Str(nNovoSalario,10,2)))
 
 Return Nil

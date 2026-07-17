@@ -1,16 +1,17 @@
 Function Main()
 
-    Local aMeses := {"Janeiro","Fevereiro","Mar‡o","Abril","Maio","Junho",;
+    Local aMeses := {"Janeiro","Fevereiro","Março","Abril","Maio","Junho",;
                      "Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"}
+    Local cMes
     Local nMes := 0
 
-    ACCEPT "Digite o n£mero do mˆs: " TO nMes
-    nMes := Val(nMes)
+    ACCEPT "Digite o número do mês: " TO cMes
+    nMes := Val(cMes)
 
     IF nMes >= 1 .AND. nMes <= 12
-        QOut("Mˆs: " + aMeses[nMes])
+        QOut("Mês: " + aMeses[nMes])
     ELSE
-        QOut("Mˆs inv lido")
+        QOut("Mês inválido")
     ENDIF
 
 Return Nil

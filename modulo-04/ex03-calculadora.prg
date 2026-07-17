@@ -1,16 +1,18 @@
 Function Main()
 
+    Local cValor1
+    Local cValor2
+    Local cOperacao
     Local nValor1 := 0
     Local nValor2 := 0
-    Local cOperacao := ""
 
-    ACCEPT "Digite o primeiro valor: " TO nValor1
-    nValor1 := Val(nValor1)
+    ACCEPT "Digite o primeiro valor: " TO cValor1
+    nValor1 := Val(cValor1)
 
-    ACCEPT "Digite o segundo valor: " TO nValor2
-    nValor2 := Val(nValor2)
+    ACCEPT "Digite o segundo valor: " TO cValor2
+    nValor2 := Val(cValor2)
 
-    ACCEPT "Digite a opera‡Æo (+, -, *, /, ^, R): " TO cOperacao
+    ACCEPT "Digite a operação (+, -, *, /, ^, R): " TO cOperacao
     cOperacao := Upper(AllTrim(cOperacao))
 
     DO CASE
@@ -26,7 +28,7 @@ Function Main()
 
     CASE cOperacao == "/"
         IF nValor2 == 0
-            QOut("Erro: divisÆo por zero.")
+            QOut("Erro: divisão por zero.")
         ELSE
             QOut("Resultado: " + AllTrim(Str(nValor1 / nValor2, 10, 2)))
         ENDIF
@@ -35,10 +37,14 @@ Function Main()
         QOut("Resultado: " + AllTrim(Str(nValor1 ^ nValor2, 10, 2)))
 
     CASE cOperacao == "R"
-        QOut("Raiz quadrada: " + AllTrim(Str(Sqrt(nValor1), 10, 2)))
+        IF nValor1 < 0
+            QOut("Erro: não existe raiz real de número negativo.")
+        ELSE
+            QOut("Raiz quadrada: " + AllTrim(Str(Sqrt(nValor1), 10, 2)))
+        ENDIF
 
     OTHERWISE
-        QOut("Opera‡Æo inv lida.")
+        QOut("Operação inválida.")
 
     ENDCASE
 
