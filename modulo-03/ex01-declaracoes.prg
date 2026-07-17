@@ -9,9 +9,9 @@ Function Main()
    SET DATE BRITISH
    
    Qout("Nome: " + cNome)
-   Qout("Sal√°rio: " + AllTrim(Str(nSalario, 10, 2)))
+   Qout("Sal·rio: " + AllTrim(Str(nSalario, 10, 2)))
    Qout("Ativo: " + IIf(lAtivo, ".T.", ".F."))
-   Qout("Data de Admiss√£o: " + DtoC(dAdmissao))
-   Qout("C√≥digo do Departamento: " + cCodDepto)
+   Qout("Data de Admiss„o: " + DtoC(dAdmissao))
+   Qout("CÛdigo do Departamento: " + cCodDepto)
 
 Return Nil

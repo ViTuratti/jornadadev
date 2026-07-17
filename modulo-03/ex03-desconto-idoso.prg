@@ -1,30 +1,37 @@
-Function main()
+Function Main()
+
     Local cNome
+    Local cDataNasc
+    Local cPreco
     Local dNasc
     Local nPreco
     Local nIdade
     Local nDesconto := 0
     Local nTotal
 
-    ACCEPT "Digite seu nome: " TO cNome
-    ACCEPT "Digite sua data de nascimento: " TO dNasc
-    ACCEPT "Digite o valor do item: " TO nPreco
+    SET DATE BRITISH
 
-    nPreco := Val(nPreco)
-    dNasc := CtoD(dNasc)
+    ACCEPT "Digite seu nome: " TO cNome
+    ACCEPT "Digite sua data de nascimento (DD/MM/YYYY): " TO cDataNasc
+    ACCEPT "Digite o valor do item: " TO cPreco
+
+    dNasc  := CToD(cDataNasc)
+    nPreco := Val(cPreco)
+
     nTotal := nPreco
 
-    nIdade := ((date() - dNasc) / 365)
+    nIdade := ((Date() - dNasc) / 365)
 
-    if (nIdade > 60)
-        nTotal := nPreco * 0.875
-        nDesconto := nPreco - nTotal
-    endif
-    Qout(" ")
-    Qout("Cliente: " + cNome)
-    Qout("Idade: " + AllTrim(Str(Int(nIdade))) + " anos")
-    Qout("Preco: " + AllTrim(Str(nPreco,10,2)))
-    Qout("Desconto: " + AllTrim(Str(nDesconto,10,2)))
-    Qout("Total: " + AllTrim(Str(nTotal,10,2)))
+    IF nIdade > 60
+        nDesconto := nPreco * 0.125
+        nTotal := nPreco - nDesconto
+    ENDIF
+
+    QOut("")
+    QOut("Cliente: " + cNome)
+    QOut("Idade: " + AllTrim(Str(Int(nIdade))) + " anos")
+    QOut("Preco: R$ " + AllTrim(Str(nPreco,10,2)))
+    QOut("Desconto: R$ " + AllTrim(Str(nDesconto,10,2)))
+    QOut("Total: R$ " + AllTrim(Str(nTotal,10,2)))
 
 Return Nil
