@@ -8,9 +8,9 @@ Function Main()
         If nValor <= 0
             Exit
         EndIf
-        Qout("O dobro de " + Str(nValor) + " ‚ " + alltrim(Str(nValor * 2)))
+        Qout("O dobro de " + Str(nValor) + " Ã© " + alltrim(Str(nValor * 2)))
     EndDo
 
-    Qout("Valor inv lido.")
+    Qout("Valor invÂ lido.")
 
 Return Nil
