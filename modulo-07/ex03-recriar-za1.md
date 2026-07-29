@@ -50,4 +50,4 @@ Após a criação da tabela, foi realizada a conferência da estrutura no MPSDU,
 
 Segue abaixo a imagem da estrutura da tabela no MPSDU.
 
-![Estrutura](imagens/Estrutura.png)
+![Estrutura](imagens/Estrutura_ZA1.png)
