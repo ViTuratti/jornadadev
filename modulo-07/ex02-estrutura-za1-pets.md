@@ -6,8 +6,9 @@ a. Campos da ZA1
 | ZA1_COD     | Caractere (C)  | 6        | Código PET       | Real         |
 | ZA1_NOME    | Caractere (C)  | 30       | Nome do pet      | Real         |
 | ZA1_RACA    | Caractere (C)  | 30       | Raça do pet      | Real         |
-| ZA1_CLI     | Caractere (C)  | 6        | Cliente do pet   | Real         |
-| ZA1_NOMECLI | Caractere (C)  | 60       | Nome do cliente  | Virtual      |
+| ZA1_CLI     | Caractere (C)  | 6        | Cod Cliente      | Real         |
+| ZA1_LOJACL  | Caractere (C)  | 4        | Loja do cliente  | Real         |
+| ZA1_NOMECL | Caractere (C)  | 60       | Nome do cliente  | Virtual      |
 | ZA1_NASC    | Data (D)       | 8        | Data de nascimento do pet | Real |
 
 --------------------------------------------------------------------------------------------------------
