@@ -1,13 +1,14 @@
 a. Campos da ZA1
 
-Campo	        Tipo	            Tamanho	        Descrição           Real/Virtual
-ZA1_FILIAL	    Caractere (C)	    2	            Filial              Real
-ZA1_COD         Caractere (C)       6               Codigo PET          Real
-ZA1_NOME	    Caractere (C)	    30	            Nome do pet         Real
-ZA1_RACA	    Caractere (C)	    30	            Raça do pet         Real
-ZA1_CLI         Caractere (C)       6               Cli Pet             Real
-ZA1_NOMECLI     Caractere (C)       60              Nome do Cliente     Virtual
-ZA1_NASC	    Data (D)	        8	            Dt nasc pet         Real
+| Campo       | Tipo           | Tamanho | Descrição        | Real/Virtual |
+|-------------|----------------|:--------:|------------------|--------------|
+| ZA1_FILIAL  | Caractere (C)  | 2        | Filial           | Real         |
+| ZA1_COD     | Caractere (C)  | 6        | Código PET       | Real         |
+| ZA1_NOME    | Caractere (C)  | 30       | Nome do pet      | Real         |
+| ZA1_RACA    | Caractere (C)  | 30       | Raça do pet      | Real         |
+| ZA1_CLI     | Caractere (C)  | 6        | Cliente do pet   | Real         |
+| ZA1_NOMECLI | Caractere (C)  | 60       | Nome do cliente  | Virtual      |
+| ZA1_NASC    | Data (D)       | 8        | Data de nascimento do pet | Real |
 
 --------------------------------------------------------------------------------------------------------
 
