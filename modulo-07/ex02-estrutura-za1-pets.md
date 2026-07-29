@@ -1,5 +1,3 @@
-Exercício 2 — A tabela ZA1 (Pets) que criamos em aula
-
 a. Campos da ZA1
 
 Campo	        Tipo	            Tamanho	        Descrição           Real/Virtual
@@ -11,6 +9,7 @@ ZA1_CLI         Caractere (C)       6               Cli Pet             Real
 ZA1_NOMECLI     Caractere (C)       60              Nome do Cliente     Virtual
 ZA1_NASC	    Data (D)	        8	            Dt nasc pet         Real
 
+--------------------------------------------------------------------------------------------------------
 
 b. Que índice faria sentido para a ZA1?
 
@@ -18,10 +17,13 @@ ZA1_FILIAL + ZA1_COD + ZA1_NOME
 
 Esse índice permite localizar rapidamente um pet pelo seu código dentro da filial correspondente. A justificativa é semelhante à de uma lista telefônica: em vez de procurar registro por registro, o sistema utiliza o índice para encontrar a informação de forma muito mais rápida. Além disso, o campo ZA1_COD é único para cada pet, ou seja, mesmo que existam pets com o mesmo nome e pertencentes ao mesmo cliente, cada um possuirá um código próprio, garantindo a identificação única de cada cadastro.
 
+--------------------------------------------------------------------------------------------------------
 
 c. Por que o prefixo da tabela é Z?
 
 O prefixo Z é a convenção do Protheus para identificar tabelas customizadas de cliente, ou seja, tabelas que não vêm de fábrica com o ERP, mas que foram criadas para atender uma necessidade específica de um cliente ou de um caso de uso particular. Isso diferencia claramente, só pelo nome, uma tabela padrão do sistema de uma tabela customizada. O mesmo cenário seguimos para campos customizados em tabelas padrões, geralmente iniciamos eles com "x" exemplo: SA1_XCUSTOM.
+
+--------------------------------------------------------------------------------------------------------
 
 d. Por que os campos começam com ZA1_?
 
