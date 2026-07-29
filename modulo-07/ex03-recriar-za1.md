@@ -15,7 +15,7 @@ Inicialmente, foi criada a tabela ZA1 no dicionário de dados do Protheus e, em 
 
 Além dos campos reais, foi criado o campo ZA1_NOMECL como campo virtual, responsável apenas pela apresentação do nome do cliente na tela. Para isso, foi configurado um gatilho para que, após a informação dos campos ZA1_CLI e ZA1_LOJACL, o sistema realize automaticamente a busca do nome do cliente na tabela SA1. Como esse campo é apenas informativo, ele foi definido como virtual e não editável, impedindo alterações manuais pelo usuário.
 
-![Gatilho](imagens/gatilho.png)
+![Gatilho](imagens/Gatilho.png)
 
 Também foi criado o índice primário da tabela, utilizando a composição Filial + Código do Pet + Nome do Pet (ZA1_FILIAL + ZA1_COD + ZA1_NOME), permitindo uma melhor organização dos registros e facilitando sua localização durante as consultas no sistema.
 
