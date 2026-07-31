@@ -16,10 +16,10 @@ USER FUNCTION STTIP002()
 RETURN NIL
 
 /*
-O mBrowse mantém a mesma estrutura de cadastro utilizada no AxCadastro, reaproveitando o aRotina e o dicionário de dados. 
-A principal diferença é que oferece maior controle sobre a interface, permitindo filtros, legendas e personalizações. 
-Enquanto o AxCadastro é ideal para protótipos e cadastros simples, o mBrowse é mais indicado para rotinas de produção por sua flexibilidade.
+O mBrowse mantÃ©m a mesma estrutura de cadastro utilizada no AxCadastro, reaproveitando o aRotina e o dicionÃ¡rio de dados. 
+A principal diferenÃ§a Ã© que oferece maior controle sobre a interface, permitindo filtros, legendas e personalizaÃ§Ãµes. 
+Enquanto o AxCadastro Ã© ideal para protÃ³tipos e cadastros simples, o mBrowse Ã© mais indicado para rotinas de produÃ§Ã£o por sua flexibilidade.
 
-link da imagem: 
+link da imagem: https://github.com/ViTuratti/jornadadev/blob/main/modulo-08/imagens/mBrowse_ZA1.png
 
 */
