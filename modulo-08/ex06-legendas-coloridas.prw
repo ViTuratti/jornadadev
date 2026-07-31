@@ -24,4 +24,4 @@ USER FUNCTION STTIP002()
 
 RETURN NIL
 
-// link da imagem: 
+// link da imagem: https://github.com/ViTuratti/jornadadev/blob/main/modulo-08/imagens/legenda.png 
